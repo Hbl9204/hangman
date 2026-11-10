@@ -132,3 +132,12 @@ em { font-style: italic; color: var(--green); font-weight: 500; }
   * { animation: none !important; transition: none !important; }
   .reveal { opacity: 1; transform: none; }
 }
+
+/* Cennik */
+.card__desc { color: var(--muted); font-size: .92rem; margin-bottom: .6rem; }
+.card__sub { margin-top: 1.6rem; font-size: 1.1rem; }
+.price-list { list-style: none; }
+.price-list li { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; padding: .7rem 0; border-bottom: 1px dashed #e0dccf; }
+.price-list li:last-child { border-bottom: 0; }
+.price-list small { display: block; color: var(--muted); font-size: .8rem; }
+.price-list b { color: var(--green); white-space: nowrap; }
