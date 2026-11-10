@@ -3,23 +3,46 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Salon Paleta Fryzjerstwa – fryzjer Gdynia</title>
-  <meta name="description" content="Salon Paleta Fryzjerstwa w Gdyni – strzyżenie, koloryzacja, stylizacja i pielęgnacja włosów. Umów wizytę już dziś.">
+  <title>Salon Paleta Fryzjerstwa – fryzjer w centrum Gdyni</title>
+  <meta name="description" content="Salon fryzjerski w samym centrum Gdyni, ul. Władysława IV 7-15. Strzyżenia, koloryzacje i zabiegi pielęgnacyjne. Umów się przez Booksy lub tel. 504 837 540.">
   <meta property="og:title" content="Salon Paleta Fryzjerstwa – Gdynia">
-  <meta property="og:description" content="Strzyżenie, koloryzacja i stylizacja włosów w Gdyni.">
+  <meta property="og:description" content="Strzyżenia, koloryzacje i zabiegi pielęgnacyjne w samym centrum Gdyni.">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎨</text></svg>">
+  <link rel="icon" type="image/png" href="assets/img/logo.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HairSalon",
+    "name": "Salon Paleta Fryzjerstwa",
+    "image": "assets/img/logo.png",
+    "telephone": "+48504837540",
+    "email": "paletafryzjerstwa@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "ul. Władysława IV 7-15",
+      "addressLocality": "Gdynia",
+      "addressCountry": "PL"
+    },
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=61575747477797",
+      "https://www.instagram.com/paleta_fryzjerstwa_gdynia/",
+      "https://www.tiktok.com/@paleta_fryzjerstwa",
+      "https://salonpaletafryzjerstwa.booksy.com/a"
+    ]
+  }
+  </script>
 </head>
 <body>
 
 <header class="nav" id="top">
   <div class="container nav__inner">
     <a href="#top" class="logo">
-      <span class="logo__mark" aria-hidden="true"></span>
+      <img src="assets/img/logo.png" alt="" class="logo__mark" width="40" height="40">
       <span>Paleta <em>Fryzjerstwa</em></span>
     </a>
     <button class="nav__toggle" aria-label="Otwórz menu" aria-expanded="false">
@@ -30,7 +53,7 @@
       <a href="#uslugi">Usługi</a>
       <a href="#galeria">Galeria</a>
       <a href="#kontakt">Kontakt</a>
-      <a href="#kontakt" class="btn btn--small">Umów wizytę</a>
+      <a href="https://salonpaletafryzjerstwa.booksy.com/a" target="_blank" rel="noopener" class="btn btn--small">Umów wizytę</a>
     </nav>
   </div>
 </header>
@@ -40,20 +63,19 @@
   <section class="hero">
     <div class="container hero__inner">
       <div class="hero__text">
-        <p class="eyebrow">Salon fryzjerski · Gdynia</p>
+        <p class="eyebrow">Salon fryzjerski · centrum Gdyni</p>
         <h1>Twoje włosy,<br><em>nasza paleta</em> możliwości</h1>
-        <p class="lead">Strzyżenie, koloryzacja i stylizacja dopasowane do Ciebie. Łączymy rzemiosło fryzjerskie z wyczuciem koloru, żebyś wychodziła i wychodził od nas z fryzurą, która naprawdę pasuje.</p>
+        <p class="lead">Zapraszamy na strzyżenia, najróżniejsze koloryzacje oraz zabiegi pielęgnacyjne dopasowane do Twoich potrzeb.</p>
         <div class="hero__cta">
-          <a href="tel:+48000000000" class="btn">Zadzwoń i umów się</a>
-          <a href="#uslugi" class="btn btn--ghost">Zobacz usługi</a>
+          <a href="https://salonpaletafryzjerstwa.booksy.com/a" target="_blank" rel="noopener" class="btn">Zarezerwuj w Booksy</a>
+          <a href="tel:+48504837540" class="btn btn--ghost">Zadzwoń: 504 837 540</a>
         </div>
       </div>
       <div class="hero__art" aria-hidden="true">
-        <div class="swatch s1"></div>
-        <div class="swatch s2"></div>
-        <div class="swatch s3"></div>
-        <div class="swatch s4"></div>
-        <div class="swatch s5"></div>
+        <img src="assets/img/logo.png" alt="" class="hero__logo">
+        <div class="dot d1"></div>
+        <div class="dot d2"></div>
+        <div class="dot d3"></div>
       </div>
     </div>
   </section>
@@ -61,17 +83,18 @@
   <!-- O NAS -->
   <section class="section" id="o-nas">
     <div class="container about">
-      <div>
-        <p class="eyebrow">O nas</p>
-        <h2>Miejsce, w którym kolor ma znaczenie</h2>
-      </div>
+      <figure class="about__photo">
+        <img src="assets/img/wnetrze.jpg" alt="Wnętrze Salonu Paleta Fryzjerstwa – stanowiska z owalnymi lustrami" loading="lazy">
+      </figure>
       <div class="about__body">
-        <p>Salon Paleta Fryzjerstwa to kameralne miejsce w Gdyni, w którym każda wizyta zaczyna się od rozmowy. Słuchamy, doradzamy i dobieramy fryzurę oraz kolor do Twojego stylu, typu urody i codziennych potrzeb.</p>
-        <p>Pracujemy na sprawdzonych, profesjonalnych kosmetykach i dbamy o to, żeby włosy były nie tylko piękne, ale i zdrowe.</p>
+        <p class="eyebrow">O nas</p>
+        <h2>Jasne, spokojne miejsce w samym sercu Gdyni</h2>
+        <p>Salon Paleta Fryzjerstwa znajdziesz przy ul. Władysława IV, w samym centrum miasta. Każda wizyta zaczyna się od rozmowy: słuchamy, doradzamy i dobieramy fryzurę oraz kolor do Twojego stylu i codziennych potrzeb.</p>
+        <p>Dbamy o to, żeby włosy były nie tylko piękne, ale i zdrowe, dlatego do każdej usługi dobieramy odpowiednią pielęgnację.</p>
         <ul class="features">
-          <li><strong>Indywidualna konsultacja</strong><span>przed każdą usługą</span></li>
-          <li><strong>Profesjonalne produkty</strong><span>do koloryzacji i pielęgnacji</span></li>
-          <li><strong>Kameralna atmosfera</strong><span>bez pośpiechu</span></li>
+          <li><strong>Strzyżenia</strong><span>damskie, męskie i dziecięce</span></li>
+          <li><strong>Koloryzacje</strong><span>od klasyki po odważne odcienie</span></li>
+          <li><strong>Pielęgnacja</strong><span>zabiegi dopasowane do włosów</span></li>
         </ul>
       </div>
     </div>
@@ -80,39 +103,43 @@
   <!-- USŁUGI -->
   <section class="section section--tint" id="uslugi">
     <div class="container">
-      <p class="eyebrow">Usługi i cennik</p>
+      <p class="eyebrow">Usługi</p>
       <h2>Co możemy dla Ciebie zrobić</h2>
-      <p class="note">Ceny orientacyjne – ostateczna kwota zależy od długości i gęstości włosów. <span class="todo">[ceny do uzupełnienia]</span></p>
+      <p class="note">Aktualny cennik, czas trwania usług i wolne terminy znajdziesz w Booksy. <span class="todo">[cennik do wpisania z Booksy]</span></p>
 
       <div class="services">
         <article class="card">
-          <h3>Strzyżenie</h3>
-          <ul class="price-list">
-            <li><span>Strzyżenie damskie</span><b>od ___ zł</b></li>
-            <li><span>Strzyżenie męskie</span><b>od ___ zł</b></li>
-            <li><span>Strzyżenie dziecięce</span><b>od ___ zł</b></li>
-            <li><span>Grzywka / odświeżenie</span><b>od ___ zł</b></li>
+          <div class="card__icon" aria-hidden="true">✂</div>
+          <h3>Strzyżenia</h3>
+          <ul class="service-list">
+            <li>Strzyżenie damskie</li>
+            <li>Strzyżenie męskie</li>
+            <li>Strzyżenie dziecięce</li>
+            <li>Grzywka i odświeżenie fryzury</li>
           </ul>
         </article>
         <article class="card">
-          <h3>Koloryzacja</h3>
-          <ul class="price-list">
-            <li><span>Farbowanie jednolite</span><b>od ___ zł</b></li>
-            <li><span>Odrost</span><b>od ___ zł</b></li>
-            <li><span>Pasemka / refleksy</span><b>od ___ zł</b></li>
-            <li><span>Balayage / ombre</span><b>od ___ zł</b></li>
+          <div class="card__icon" aria-hidden="true">🎨</div>
+          <h3>Koloryzacje</h3>
+          <ul class="service-list">
+            <li>Farbowanie i odrost</li>
+            <li>Pasemka i refleksy</li>
+            <li>Balayage i ombre</li>
+            <li>Tonowanie</li>
           </ul>
         </article>
         <article class="card">
-          <h3>Stylizacja i pielęgnacja</h3>
-          <ul class="price-list">
-            <li><span>Modelowanie</span><b>od ___ zł</b></li>
-            <li><span>Upięcie okolicznościowe</span><b>od ___ zł</b></li>
-            <li><span>Zabieg regenerujący</span><b>od ___ zł</b></li>
-            <li><span>Konsultacja</span><b>___ zł</b></li>
+          <div class="card__icon" aria-hidden="true">✦</div>
+          <h3>Pielęgnacja i stylizacja</h3>
+          <ul class="service-list">
+            <li>Zabiegi regenerujące</li>
+            <li>Modelowanie</li>
+            <li>Upięcia okolicznościowe</li>
+            <li>Konsultacja fryzjerska</li>
           </ul>
         </article>
       </div>
+      <p class="center"><a class="btn" href="https://salonpaletafryzjerstwa.booksy.com/a" target="_blank" rel="noopener">Zobacz cennik i wolne terminy</a></p>
     </div>
   </section>
 
@@ -121,16 +148,19 @@
     <div class="container">
       <p class="eyebrow">Galeria</p>
       <h2>Nasze metamorfozy</h2>
-      <p class="note">Tu trafią zdjęcia prac salonu z Facebooka. <span class="todo">[zdjęcia do dodania]</span></p>
+      <p class="note">Najnowsze prace pokazujemy na Instagramie i TikToku. <span class="todo">[zdjęcia prac do dodania]</span></p>
       <div class="gallery">
         <div class="tile t1"><span>Koloryzacja</span></div>
         <div class="tile t2"><span>Strzyżenie</span></div>
         <div class="tile t3"><span>Balayage</span></div>
-        <div class="tile t4"><span>Upięcie</span></div>
+        <div class="tile t4"><span>Pielęgnacja</span></div>
         <div class="tile t5"><span>Metamorfoza</span></div>
-        <div class="tile t6"><span>Wnętrze salonu</span></div>
       </div>
-      <p class="center"><a class="btn btn--ghost" href="https://www.facebook.com/profile.php?id=61575747477797" target="_blank" rel="noopener">Więcej na Facebooku</a></p>
+      <div class="socials center">
+        <a class="btn btn--ghost" href="https://www.instagram.com/paleta_fryzjerstwa_gdynia/" target="_blank" rel="noopener">Instagram</a>
+        <a class="btn btn--ghost" href="https://www.tiktok.com/@paleta_fryzjerstwa" target="_blank" rel="noopener">TikTok</a>
+        <a class="btn btn--ghost" href="https://www.facebook.com/profile.php?id=61575747477797" target="_blank" rel="noopener">Facebook</a>
+      </div>
     </div>
   </section>
 
@@ -140,27 +170,31 @@
       <div>
         <p class="eyebrow">Kontakt</p>
         <h2>Umów wizytę</h2>
-        <p>Najszybciej umówisz się telefonicznie lub przez wiadomość na Facebooku.</p>
+        <p>Umów się przez Booksy lub telefonicznie. Chętnie odpowiemy też na wiadomość na WhatsAppie, Facebooku lub mailu.</p>
 
         <dl class="contact__list">
           <dt>Adres</dt>
-          <dd>ul. ____________, Gdynia <span class="todo">[do uzupełnienia]</span></dd>
+          <dd>ul. Władysława IV 7-15, Gdynia</dd>
           <dt>Telefon</dt>
-          <dd><a href="tel:+48000000000">+48 000 000 000</a> <span class="todo">[do uzupełnienia]</span></dd>
-          <dt>Facebook</dt>
-          <dd><a href="https://www.facebook.com/profile.php?id=61575747477797" target="_blank" rel="noopener">Salon Paleta Fryzjerstwa</a></dd>
+          <dd><a href="tel:+48504837540">504 837 540</a></dd>
+          <dt>WhatsApp</dt>
+          <dd><a href="https://wa.me/48504837540" target="_blank" rel="noopener">+48 504 837 540</a></dd>
+          <dt>E-mail</dt>
+          <dd><a href="mailto:paletafryzjerstwa@gmail.com">paletafryzjerstwa@gmail.com</a></dd>
+          <dt>Rezerwacje</dt>
+          <dd><a href="https://salonpaletafryzjerstwa.booksy.com/a" target="_blank" rel="noopener">Booksy</a></dd>
         </dl>
 
-        <h3>Godziny otwarcia <span class="todo">[do potwierdzenia]</span></h3>
+        <h3>Godziny otwarcia <span class="todo">[do uzupełnienia]</span></h3>
         <table class="hours">
-          <tr><td>Poniedziałek – piątek</td><td>9:00 – 18:00</td></tr>
-          <tr><td>Sobota</td><td>9:00 – 14:00</td></tr>
+          <tr><td>Poniedziałek – piątek</td><td>__:__ – __:__</td></tr>
+          <tr><td>Sobota</td><td>__:__ – __:__</td></tr>
           <tr><td>Niedziela</td><td>nieczynne</td></tr>
         </table>
       </div>
       <div class="map">
-        <iframe title="Mapa – Gdynia" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-          src="https://www.google.com/maps?q=Gdynia&output=embed"></iframe>
+        <iframe title="Mapa – Salon Paleta Fryzjerstwa, ul. Władysława IV 7-15, Gdynia" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=W%C5%82adys%C5%82awa+IV+7-15,+Gdynia&output=embed"></iframe>
       </div>
     </div>
   </section>
@@ -168,7 +202,7 @@
 
 <footer class="footer">
   <div class="container footer__inner">
-    <span>© <span id="year"></span> Salon Paleta Fryzjerstwa · Gdynia</span>
+    <span>© <span id="year"></span> Salon Paleta Fryzjerstwa · ul. Władysława IV 7-15, Gdynia</span>
     <a href="#top">Do góry ↑</a>
   </div>
 </footer>

@@ -14,7 +14,7 @@ links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
 }));
 
 // Animacja pojawiania się sekcji
-const items = document.querySelectorAll('.section h2, .card, .tile, .features li, .about__body, .contact > *');
+const items = document.querySelectorAll('.section h2, .card, .tile, .features li, .about__photo, .contact > *');
 items.forEach(el => el.classList.add('reveal'));
 const io = new IntersectionObserver(entries => {
   entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
