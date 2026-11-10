@@ -169,3 +169,10 @@ em { font-style: italic; color: var(--green); font-weight: 500; }
   .tab { flex: 0 0 auto; padding: .5rem 1rem; font-size: .88rem; }
   .price-group { padding: 1.25rem; }
 }
+
+/* Darmowa konsultacja */
+.consult { display: flex; align-items: center; gap: 1rem; background: #fff; border-left: 4px solid var(--wood); border-radius: 12px; padding: 1rem 1.25rem; margin-bottom: 1.75rem; box-shadow: var(--shadow); }
+.consult p { color: var(--muted); font-size: .95rem; }
+.consult strong { color: var(--ink); }
+.consult__badge { flex: 0 0 auto; background: var(--wood); color: #fff; font-size: .75rem; font-weight: 600; text-transform: uppercase; letter-spacing: .08em; padding: .35rem .7rem; border-radius: 999px; }
+@media (max-width: 600px) { .consult { flex-direction: column; align-items: flex-start; gap: .6rem; } }
