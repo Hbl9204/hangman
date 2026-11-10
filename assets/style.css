@@ -166,6 +166,6 @@ em { font-style: italic; color: var(--green); font-weight: 500; }
 @media (max-width: 760px) {
   .panel { grid-template-columns: 1fr; }
   .tabs { flex-wrap: nowrap; overflow-x: auto; padding-bottom: .4rem; margin-inline: -16px; padding-inline: 16px; scrollbar-width: none; }
-  .tab { flex: 0 0 auto; }
+  .tab { flex: 0 0 auto; padding: .5rem 1rem; font-size: .88rem; }
   .price-group { padding: 1.25rem; }
 }
