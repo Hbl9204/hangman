@@ -151,3 +151,21 @@ em { font-style: italic; color: var(--green); font-weight: 500; }
 @media (max-width: 760px) { .lightbox__close { top: 8px; right: 8px; } }
 @media (max-width: 900px) { .work { flex-basis: calc((100% - 2rem) / 3); } }
 @media (max-width: 600px) { .work { flex-basis: calc((100% - 1rem) / 2); } }
+
+/* Zakładki cennika */
+.tabs { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1.5rem; }
+.tab { font: inherit; font-weight: 600; font-size: .95rem; padding: .6rem 1.2rem; border-radius: 999px; border: 2px solid var(--green); background: transparent; color: var(--green); cursor: pointer; transition: background .2s, color .2s; }
+.tab:hover { background: rgba(62, 107, 84, .1); }
+.tab[aria-selected="true"] { background: var(--green); color: #fff; }
+.tab:focus-visible { outline: 3px solid var(--wood); outline-offset: 2px; }
+.panel { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; }
+.panel[hidden] { display: none; }
+.panel__title { grid-column: 1 / -1; position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+.price-group { background: #fff; border-radius: var(--radius); padding: 1.5rem 1.75rem; box-shadow: var(--shadow); }
+.price-group h4 { font-family: "Playfair Display", Georgia, serif; font-size: 1.2rem; margin-bottom: .3rem; }
+@media (max-width: 760px) {
+  .panel { grid-template-columns: 1fr; }
+  .tabs { flex-wrap: nowrap; overflow-x: auto; padding-bottom: .4rem; margin-inline: -16px; padding-inline: 16px; scrollbar-width: none; }
+  .tab { flex: 0 0 auto; }
+  .price-group { padding: 1.25rem; }
+}
