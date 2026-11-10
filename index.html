@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/style.css?v=202611100152">
+  <link rel="stylesheet" href="assets/style.css?v=202611100218">
   <link rel="icon" type="image/png" href="assets/img/logo.png">
   <script type="application/ld+json">
   {
@@ -28,6 +28,10 @@
       "addressLocality": "Gdynia",
       "addressCountry": "PL"
     },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Friday", "Saturday"], "opens": "10:00", "closes": "19:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "10:00", "closes": "20:00" }
+    ],
     "sameAs": [
       "https://www.facebook.com/profile.php?id=61575747477797",
       "https://www.instagram.com/paleta_fryzjerstwa_gdynia/",
@@ -107,11 +111,16 @@
       <h2>Usługi i cennik</h2>
       <p class="note">Ceny „od” zależą od długości i gęstości włosów. Dodatki i wolne terminy sprawdzisz w Booksy.</p>
 
+      <div class="consult">
+        <span class="consult__badge">Gratis</span>
+        <p><strong>Nie wiesz, co wybrać?</strong> Umów się na darmową, 15-minutową konsultację. Doradzimy usługę i kolor dopasowany do Twoich włosów.</p>
+      </div>
       <div class="tabs" role="tablist" aria-label="Kategorie usług">
         <button class="tab" role="tab" id="tab-damskie" aria-controls="panel-damskie" aria-selected="true">Damskie</button>
         <button class="tab" role="tab" id="tab-meskie" aria-controls="panel-meskie" aria-selected="false" tabindex="-1">Męskie</button>
         <button class="tab" role="tab" id="tab-koloryzacja" aria-controls="panel-koloryzacja" aria-selected="false" tabindex="-1">Koloryzacja</button>
         <button class="tab" role="tab" id="tab-pielegnacja" aria-controls="panel-pielegnacja" aria-selected="false" tabindex="-1">Pielęgnacja</button>
+        <button class="tab" role="tab" id="tab-olaplex" aria-controls="panel-olaplex" aria-selected="false" tabindex="-1">OLAPLEX</button>
         <button class="tab" role="tab" id="tab-dzieciece" aria-controls="panel-dzieciece" aria-selected="false" tabindex="-1">Dziecięce</button>
       </div>
       <div class="panel" role="tabpanel" id="panel-damskie" aria-labelledby="tab-damskie">
@@ -300,9 +309,53 @@
             <li><span>Włosy długie / gęste<small>3 h 30 min</small></span><b>od 650 zł</b></li>
           </ul>
         </article>
+      </div>
+      <div class="panel" role="tabpanel" id="panel-olaplex" aria-labelledby="tab-olaplex" hidden>
+        <h3 class="panel__title">OLAPLEX</h3>
         <article class="price-group">
-          <h4>Rekonstrukcja OLAPLEX i konsultacja</h4>
-          <p class="card__desc">Aktualne ceny tych usług znajdziesz w Booksy.</p>
+          <h4>OLAPLEX Basic + modelowanie</h4>
+          <p class="card__desc">Lekka pielęgnacja i wygładzenie.</p>
+          <ul class="price-list">
+            <li><span>Włosy krótkie (do ucha)<small>50 min</small></span><b>155 zł</b></li>
+            <li><span>Włosy średnie (powyżej ramion)<small>1 h 5 min</small></span><b>175 zł</b></li>
+            <li><span>Włosy długie (poniżej ramion)<small>1 h 5 min</small></span><b>190 zł</b></li>
+          </ul>
+        </article>
+        <article class="price-group">
+          <h4>OLAPLEX Care + modelowanie</h4>
+          <p class="card__desc">Intensywne odżywienie i miękkość.</p>
+          <ul class="price-list">
+            <li><span>Włosy krótkie (do ucha)<small>55 min</small></span><b>185 zł</b></li>
+            <li><span>Włosy średnie (powyżej ramion)<small>1 h 10 min</small></span><b>205 zł</b></li>
+            <li><span>Włosy długie (poniżej ramion)<small>1 h 10 min</small></span><b>220 zł</b></li>
+          </ul>
+        </article>
+        <article class="price-group">
+          <h4>OLAPLEX Repair + modelowanie</h4>
+          <p class="card__desc">Regeneracja i wzmocnienie włosa.</p>
+          <ul class="price-list">
+            <li><span>Włosy krótkie (do ucha)<small>55 min</small></span><b>195 zł</b></li>
+            <li><span>Włosy średnie (powyżej ramion)<small>1 h 10 min</small></span><b>215 zł</b></li>
+            <li><span>Włosy długie (poniżej ramion)<small>1 h 10 min</small></span><b>230 zł</b></li>
+          </ul>
+        </article>
+        <article class="price-group">
+          <h4>OLAPLEX Pro + modelowanie</h4>
+          <p class="card__desc">Profesjonalna odbudowa wiązań we włosach.</p>
+          <ul class="price-list">
+            <li><span>Włosy krótkie (do ucha)<small>1 h 15 min</small></span><b>245 zł</b></li>
+            <li><span>Włosy średnie (powyżej ramion)<small>1 h 30 min</small></span><b>270 zł</b></li>
+            <li><span>Włosy długie (poniżej ramion)<small>1 h 30 min</small></span><b>290 zł</b></li>
+          </ul>
+        </article>
+        <article class="price-group">
+          <h4>OLAPLEX Extreme + modelowanie</h4>
+          <p class="card__desc">Intensywna rekonstrukcja i efekt „ratunkowy”.</p>
+          <ul class="price-list">
+            <li><span>Włosy krótkie (do ucha)<small>1 h 25 min</small></span><b>285 zł</b></li>
+            <li><span>Włosy średnie (powyżej ramion)<small>1 h 40 min</small></span><b>310 zł</b></li>
+            <li><span>Włosy długie (poniżej ramion)<small>1 h 40 min</small></span><b>330 zł</b></li>
+          </ul>
         </article>
       </div>
       <div class="panel" role="tabpanel" id="panel-dzieciece" aria-labelledby="tab-dzieciece" hidden>
@@ -418,10 +471,11 @@
           <dd><a href="https://salonpaletafryzjerstwa.booksy.com/a" target="_blank" rel="noopener">Booksy</a></dd>
         </dl>
 
-        <h3>Godziny otwarcia <span class="todo">[do uzupełnienia]</span></h3>
+        <h3>Godziny otwarcia</h3>
         <table class="hours">
-          <tr><td>Poniedziałek – piątek</td><td>__:__ – __:__</td></tr>
-          <tr><td>Sobota</td><td>__:__ – __:__</td></tr>
+          <tr><td>Poniedziałek – środa</td><td>10:00 – 19:00</td></tr>
+          <tr><td>Czwartek</td><td>10:00 – 20:00</td></tr>
+          <tr><td>Piątek – sobota</td><td>10:00 – 19:00</td></tr>
           <tr><td>Niedziela</td><td>nieczynne</td></tr>
         </table>
       </div>
@@ -440,6 +494,6 @@
   </div>
 </footer>
 
-<script src="assets/script.js?v=202611100152"></script>
+<script src="assets/script.js?v=202611100218"></script>
 </body>
 </html>
