@@ -135,7 +135,7 @@ em { font-style: italic; color: var(--green); font-weight: 500; }
 
 /* Galeria metamorfoz */
 .works { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; }
-.work { flex: 0 0 calc((100% - 3rem) / 4); }
+.work { flex: 0 0 calc((100% - 2rem) / 3); }
 .work__img { display: block; width: 100%; padding: 0; border: 0; background: none; cursor: zoom-in; position: relative; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
 .work__img img { width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; transition: transform .5s; }
 .work__img:hover img, .work__img:focus-visible img { transform: scale(1.04); }
